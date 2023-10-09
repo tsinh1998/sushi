@@ -1106,6 +1106,13 @@ a:focus {
     background-color: #111111;
 }
 
+.button-default.black {
+    color: #FFF;
+}
+
+.button-default.black::before {
+    background-color: #FFF;
+}
 
 .button-reply {
     width: max-content;
@@ -1144,6 +1151,17 @@ a:focus {
 .button-style-1:hover {
     background-color: #111111;
     color: #FFF;
+}
+
+.button-style-1.white {
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.button-style-1.white:hover {
+    background-color: #FFF;
+    color: #111111;
 }
 
 /* header */
@@ -1740,13 +1758,13 @@ a:focus {
     padding-bottom: 50px;
 }
 
-.footer .content .center ul {
+ul.intro {
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-.footer .content .center ul li {
+ul.intro li {
     text-transform: uppercase;
     color: #FFF;
     font-size: 15px;
@@ -1755,7 +1773,7 @@ a:focus {
     position: relative;
 }
 
-.footer .content .center ul li::after {
+ul.intro li::after {
     position: absolute;
     content: '';
     right: -20px;
@@ -1766,7 +1784,7 @@ a:focus {
     background-color: #d74d29;
 }
 
-.footer .content .center ul li:last-child::after {
+ul.intro li:last-child::after {
     display: none;
 }
 
@@ -2017,7 +2035,7 @@ a:focus {
 
 /* heading-section */
 .heading-section .sub {
-    color: #C3A27C;
+    color: #888888;
     font-family: 'CerebriSans';
     font-size: 15px;
     font-weight: 400;
@@ -2028,34 +2046,8 @@ a:focus {
     position: relative;
 }
 
-.heading-section .sub-before {
-    padding-left: 22px;
-}
-
-.heading-section.text-center .sub-before {
-    padding-left: 0;
-}
-
-.heading-section .sub-before::before {
-    position: absolute;
-    content: url(../icon/coffee-2.svg);
-    top: -4px;
-    left: -2px;
-}
-
-.heading-section.text-center .sub-before::before {
-    left: -24px;
-}
-
-.heading-section .sub-after::after {
-    position: absolute;
-    content: url(../icon/coffee-2.svg);
-    top: -4px;
-    margin-left: 9px;
-}
-
 .heading-section .main {
-    color: #171412;
+    color: #111111;
     font-size: 45px;
     font-weight: 700;
     line-height: 58px;
@@ -2067,6 +2059,8 @@ a:focus {
 .heading-section.style-1 .main {
     color: #FFF;
 }
+
+
 
 /* preload */
 /* -------------------------------- */
