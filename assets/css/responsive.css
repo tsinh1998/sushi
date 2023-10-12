@@ -1,29 +1,30 @@
 
 @media (min-width: 1921px) {
+    .menu-primary-menu {
+        padding-left: 0;
+        justify-content: center;
+    }
 
 
-
-    .choose-us {
-        background-size: cover;
-    }
-    .wg-coffee-post > .center,
-    .wg-coffee-post > .left {
-        width: 100%;
-    }
-    .wg-coffee-post > .right {
-        width: 50%;
-    }
-    .right .coffee-post-item .image img, 
-    .left .coffee-post-item .image img {
-        height: unset;
-    }
-    .wg-coffee-time .left img {
-        width: 100%;
-        height: unset;
-    }
+    
 }
 
 @media (max-width: 1440px) {
+    .menu-primary-menu {
+        padding-left: 0;
+        justify-content: center;
+    }
+    .footer > .right {
+        right: 30px;
+        top: 85px;
+    }
+    .footer > .left {
+        left: 30px;
+        top: 85px;
+    }
+
+
+
 
 
 
@@ -76,13 +77,6 @@
     .wg-banner-coffee .bottom {
         padding-left: 0;
         padding-right: 0;
-    }
-    .header-2 #site-logo {
-        left: 85px;
-    }
-    .header-2 > .top,
-    .header-2 > .header-inner {
-        padding-left: 150px;
     }
     .partners {
         padding-left:  15px !important; 
@@ -159,6 +153,9 @@
 
 
 
+
+
+
     .wg-banner-coffee .top img {
         height: unset;
     }
@@ -218,12 +215,16 @@
         display: block;
     }
     .header-inner {
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
+        padding-top: 30px !important;
+        padding-bottom: 29px !important;
     }
 
 
     
+
+
+
+
     .special-menu-item.season {
         margin-top: 0;
     }
@@ -271,6 +272,10 @@
 
 
 
+
+
+
+
     .wg-offer-item {
         flex-wrap: wrap;
     }
@@ -307,6 +312,24 @@
 }
 
 @media (max-width: 768px) {
+    .footer .bottom {
+        padding: 0;
+        justify-content: center;
+        gap: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
     .wg-about .image {
         min-width: unset;
         width: 100%;
@@ -344,6 +367,9 @@
     br {
         display: none;
     }
+    
+
+
 
 
 
@@ -424,17 +450,6 @@
     }
     .coffee-post-item.style-1 .content {
         top: 50%;
-    }
-    .wg-portfolio .wrap {
-        grid-template-areas: 
-        "aa aa"
-        "aa aa"
-        "bb cc"
-        "dd dd"
-        "ee ff"
-        "gg gg"
-        ;
-        grid-template-columns: repeat(2,1fr);
     }
     .wg-offer-item .image {
         min-width: unset;
