@@ -345,7 +345,7 @@
             <div class="wg-service">
                 <div class="themesflat-container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="left">
                                 <div class="service-item">
                                     <div class="image">
@@ -376,7 +376,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6">
                             <div class="right">
                                 <img src="assets/images/box-item/about-2.jpg" alt="" class="item-1">
                                 <img src="assets/images/box-item/about-3.jpg" alt="" class="item-2">
@@ -982,23 +982,31 @@
             </div>
             <!-- /wg-news -->
 
-
-
-
-
-
-
             <!-- wg-portfolio --> 
             <div class="wg-portfolio">
 
                 <div class="swiper-container" data-swiper='{
                     "spaceBetween": 30,
-                    "slidesPerView": 4,
+                    "slidesPerView": 1,
                     "observer": true,
                     "observeParents": true,
                     "pagination": {
                         "el": ".portfolio-pagination",
                         "clickable": true
+                    },
+                    "breakpoints": {
+                        "768": {
+                            "slidesPerView": 2,
+                            "spaceBetween": 30
+                        },
+                        "1024": {
+                            "slidesPerView": 3,
+                            "spaceBetween": 30
+                        },
+                        "1440": {
+                            "slidesPerView": 4,
+                            "spaceBetween": 30
+                        }
                     }
                 }'>
                     <div class="swiper-wrapper">
@@ -1057,7 +1065,7 @@
                         <div class="swiper-slide">
                             <div class="portfolio-item">
                                 <div class="image">
-                                    <img src="assets/images/box-item/portfolio-1.jpg" alt="">
+                                    <img src="assets/images/box-item/portfolio-5.jpg" alt="">
                                 </div>
                                 <div class="content">
                                     <div class="text-special m-auto">ゆ る</div>
@@ -1070,7 +1078,7 @@
                         <div class="swiper-slide">
                             <div class="portfolio-item">
                                 <div class="image">
-                                    <img src="assets/images/box-item/portfolio-2.jpg" alt="">
+                                    <img src="assets/images/box-item/portfolio-6.jpg" alt="">
                                 </div>
                                 <div class="content">
                                     <div class="text-special m-auto">ゆ る</div>

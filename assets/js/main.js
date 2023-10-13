@@ -97,6 +97,32 @@
         }
     }
 
+    var header2 = function() {
+      if ($('div').hasClass('home-2')) {
+
+        $('.lines').on('click', function () {
+          $(this).closest('.home-2').find('.mobile-nav-wrap').toggleClass('active');
+        });
+        $('.mobile-nav-close').on('click', function () {
+            $(this).closest('.home-2').find('.mobile-nav-wrap').toggleClass('active');
+        });
+
+        $(document).on("click", ".menu-item-has-children-mobile", function () {
+            var args = { duration: 600 };
+            if ($(this).hasClass("active")) {
+              $(this).children(".sub-menu-mobile").slideUp(args);
+              $(this).removeClass("active");
+            } else {
+              $(".sub-menu-mobile").slideUp(args);
+              $(this).children(".sub-menu-mobile").slideDown(args);
+              $(".menu-item-has-children-mobile").removeClass("active");
+              $(this).addClass("active");
+            }
+        });
+          
+      }
+  }
+
     var topSearch=function(){
         
       $(document).on('click',function(e){
@@ -360,6 +386,7 @@
     $(function () {
       headerFixed();
       btnmenu();
+      header2();
       topSearch();
       video();
       counter();

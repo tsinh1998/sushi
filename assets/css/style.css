@@ -789,8 +789,7 @@ input[type="url"].style-2:focus,
 input[type="search"].style-2:focus,
 input[type="tel"].style-2:focus,
 input[type="color"].style-2:focus {
-    /* background-color      : #fff;
-    border: 1px solid #c3a27c; */
+    background-color      : #fff;
 }
 
 
@@ -975,6 +974,9 @@ h6 {
 }
 .mt-30 {
     margin-top: 30px !important;
+}
+.mt-48 {
+    margin-top: 48px !important;
 }
 .divider {
     width: 100%;
@@ -1736,7 +1738,7 @@ a:focus {
 ul.intro {
     display: flex;
     justify-content: center;
-    gap: 45px;
+    gap: 15px 45px;
     flex-wrap: wrap;
 }
 
@@ -1798,6 +1800,74 @@ ul.intro li:last-child::after {
 
 .widget-social-text ul li a:hover {
     color: #d74d29;
+}
+
+/* style-1 */
+.footer.style-1 {
+    padding-top: 137px;
+}
+
+.footer.style-1 .logo-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+.footer.style-1 .logo-footer p {
+    max-width: 655px;
+    text-align: start;
+    margin-right: 16px;
+    margin-top: 8px;
+}
+
+.footer.style-1 .content {
+    margin-top: 54px;
+    margin-bottom: 42px;
+}
+
+.footer.style-1 .content .top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 32px;
+}
+
+.footer.style-1 .content .top .text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: start;
+    padding-left: 64px;
+    padding-top: 11px;
+}
+
+.footer.style-1 .content .top form {
+    margin-right: 64px;
+}
+
+.form-2 input {
+    margin-bottom: 0;
+    width: 481px;
+}
+
+.form-2 .bot button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    color: #111111;
+    border: none;
+    font-size: 20px;
+    padding: 0 18px 0 35px;
+}
+
+.footer.style-1 .content .center {
+    padding-top: 45px;
+    padding-bottom: 41px;
 }
 
 /* banner-page */
@@ -1867,6 +1937,18 @@ ul.intro li:last-child::after {
 
 .breadcrumbs li.active a {
     color: #fff;
+}
+
+.banner-page .content.contact {
+    background-image: url(../images/bg-section/bg-contact.jpg);
+}
+
+.banner-page .content.portfolio {
+    background-image: url(../images/bg-section/bg-portfolio.jpg);
+}
+
+.banner-page .content.book-a-table {
+    background-image: url(../images/bg-section/bg-book-a-table.jpg);
 }
 
 /* wg-blog */
