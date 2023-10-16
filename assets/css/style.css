@@ -597,7 +597,7 @@ select.style-1 {
 form .columns {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 0 20px;
 }
 
 textarea,
@@ -1949,6 +1949,23 @@ ul.intro li:last-child::after {
 
 .banner-page .content.book-a-table {
     background-image: url(../images/bg-section/bg-book-a-table.jpg);
+}
+
+.banner-page .content.our-menu {
+    background-image: url(../images/bg-section/bg-menu.jpg);
+    padding-bottom: 119px;
+}
+
+.banner-page .content.about {
+    background-image: url(../images/bg-section/bg-about-us.jpg);
+}
+
+.banner-page .content.our-chef {
+    background-image: url(../images/bg-section/bg-our-chef.jpg);
+}
+
+.banner-page .content.space {
+    background-image: url(../images/bg-section/bg-space.jpg);
 }
 
 /* wg-blog */

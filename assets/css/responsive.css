@@ -86,6 +86,55 @@
     .wg-contact .bot-left > img {
         display: none;
     }
+    .customer-testimonial.style-1 {
+        background-position: center;
+        background-size: cover;
+    }
+    .our-menu.style-1 .wrap {
+        padding: 100px 15px;
+    }
+    .our-menu.style-1 .center {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .wg-about.style-2 .images {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    .wg-about.style-1 .images {
+        margin-left: 0;
+        width: 100%;
+    }
+    .wg-about.style-2 .wrap,
+    .wg-about.style-1 .wrap {
+        padding-left: 0;
+        padding-right: 0;
+        gap: 30px;
+        justify-content: center;
+    }
+    .wg-about.style-2 .content {
+        padding-top: 30px;
+        padding-left: 0px;
+    }
+    .wg-about.style-1 .content {
+        padding-top: 30px;
+        padding-right: 15px;
+    }
+    .our-chef-item .content {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    .our-chef-item .image {
+        padding-right: 100px;
+        padding-left: 15px;
+    }
+    .wg-our-chef .style-text-1 {
+        right: 40px;
+    }
+    .space-info .wrap .item-1 {
+        top: -100px;
+        z-index: -1;
+    }
 
 }
 
@@ -95,25 +144,25 @@
         padding-right: 100px;
     }
     .book-table .right {
-        /* flex-wrap: wrap; */
         width: 100%;
         justify-content: space-between;
     }
     .book-table .content {
-        /* width: 100%; */
         padding-top: 100px;
         padding-bottom: 50px;
     }
     .book-table .wg-map {
-        /* margin-top: 0; */
         margin-right: 15px;
     }
     .book-table .images {
         display: none;
     }
-    .wg-contact .top-right > ul {
-        /* grid-template-columns: repeat(1,1fr); */
+    .wg-book-table.style-1 .right,
+    .wg-book-table.style-1 .left {
+        padding-left: 15px;
+        padding-right: 15px;
     }
+    
 
 
 
@@ -155,9 +204,48 @@
     .footer.style-1 .content .top .text {
         padding-top: 0;
     }
-    
-
-
+    .wg-contact {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .wg-contact .bot-right {
+        height: 500px;
+    }
+    .wg-book-table .content, .wg-book-table .image {
+        width: 100%;
+    }
+    .wg-policy {
+        flex-wrap: wrap;
+    }
+    .wg-policy .left {
+        width: 100%;
+        min-width: unset;
+    }
+    .wg-policy .right {
+        height: 750px;
+    }
+    .wg-about.style-2 .content {
+        padding-bottom: 0;
+    }
+    .wg-about.style-2 .images {
+        padding-top: 0;
+        flex-wrap: nowrap;
+        width: unset;
+        min-width: unset;
+        gap: 15px;
+    }
+    .wg-about.style-2 .images img {
+        height: fit-content;
+    }
+    .our-chef-item .content {
+        padding-bottom: 200px;
+    }
+    .space-item .content p,
+    .space-item .content .title {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 
 }
 
@@ -200,7 +288,6 @@
     }
     .our-menu .center {
         margin-top: 0;
-        text-align: center;
     }
     .our-menu .right {
         width: 100%;
@@ -228,7 +315,52 @@
     .home-2 .wrap > img {
         height: 500px;
     }
-
+    .our-menu.style-1 .wrap {
+        gap: 15px;
+    }
+    .our-menu.style-1 .left {
+        order: 1;
+        width: 48%;
+    }
+    .our-menu.style-1 .right {
+        order: 2;
+        width: 48%;
+        padding-left: 0;
+    }
+    .our-menu.style-1 .center {
+        order: 3;
+        width: 100%;
+    }
+    .wg-about.style-2 .images {
+        flex-wrap: wrap;
+    }
+    .our-chef-item {
+        flex-wrap: wrap;
+    }
+    .our-chef-item .content,
+    .our-chef-item .image {
+        width: 100%;
+    }
+    .our-chef-item .image {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 0;
+    }
+    .our-chef-item .image img {
+        width: 100%;
+    }
+    .wg-book-table.style-1 {
+        flex-wrap: wrap;
+    }
+    .wg-book-table.style-1 .right,
+    .wg-book-table.style-1 .left {
+        order: 1;
+        width: 50%;
+    }
+    .wg-book-table.style-1 .content {
+        order: 2;
+        width: 100%;
+    }
 
 }
 
@@ -294,7 +426,7 @@
         width: 340px;
         min-width: 340px;
         height: 340px;
-        margin-top: 0;
+        margin-top: 0 !important;
     }
     .footer > .left,
     .footer > .right {
@@ -321,7 +453,69 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    
-
+    .wg-contact .top-right ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+    form .columns {
+        flex-wrap: wrap;
+    }
+    .wg-policy .left {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .wg-policy .right .book-table {
+        top: 15px;
+        left: 15px;
+        width: unset;
+    }
+    .wg-policy .right .book-table .content {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        min-width: unset;
+    }
+    .our-menu.style-1 .left {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .our-menu.style-1 .right {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .our-menu.style-1 .center {
+        order: 3;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .our-menu.style-1 .widget-menu-tab {
+        margin-right: 0;
+        justify-content: space-evenly;
+        padding: 0;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+    .wg-about.style-1 .images {
+        width: unset;
+        min-width: unset;
+        padding-left: 15px;
+        padding-top: 100px;
+    }
+    .wg-book-table.style-1 .right,
+    .wg-book-table.style-1 .left {
+        width: 100%;
+        padding-top: 30px;
+    } 
+    .wg-book-table.style-1 .right img ,
+    .wg-book-table.style-1 .left img {
+        width: 100%;
+    }
+    .wg-book-table.style-1 .content p,
+    .wg-book-table.style-1 .content form {
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 
 }
