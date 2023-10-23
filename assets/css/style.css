@@ -16,6 +16,7 @@
 @import "../font/font.css";
 @import "bootstrap.css";
 /**
+
   	* Reset Browsers
     * General
 	* Elements
@@ -560,6 +561,28 @@ select{
     position: relative;
 }
 
+.select::after {
+    position: absolute;
+    content: '\e91d';
+    right: 10px;
+    top: 46%;
+    width: 20px;
+    height: 20px;
+    font-family: 'icomoon' ;
+    font-size: 13px;
+    font-weight: 700;
+    display: block;
+    color: #fff;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 select {
     border: none;
     outline: 0;
@@ -737,43 +760,6 @@ input[type="color"].style-1:focus {
     color: #111111;
 }
 
-textarea.style-2,
-input[type="text"].style-2,
-input[type="password"].style-2,
-input[type="datetime"].style-2,
-input[type="datetime-local"].style-2,
-input[type="date"].style-2,
-input[type="month"].style-2,
-input[type="time"].style-2,
-input[type="week"].style-2,
-input[type="number"].style-2,
-input[type="email"].style-2,
-input[type="url"].style-2,
-input[type="search"].style-2,
-input[type="tel"].style-2,
-input[type="color"].style-2 {
-    /* background: #f1f1f1;
-    color      : #171412; */
-}
-
-textarea.style-2::placeholder,
-input[type="text"].style-2::placeholder,
-input[type="password"].style-2::placeholder,
-input[type="datetime"].style-2::placeholder,
-input[type="datetime-local"].style-2::placeholder,
-input[type="date"].style-2::placeholder,
-input[type="month"].style-2::placeholder,
-input[type="time"].style-2::placeholder,
-input[type="week"].style-2::placeholder,
-input[type="number"].style-2::placeholder,
-input[type="email"].style-2::placeholder,
-input[type="url"].style-2::placeholder,
-input[type="search"].style-2::placeholder,
-input[type="tel"].style-2::placeholder,
-input[type="color"].style-2::placeholder {
-    /* color      : #171412; */
-}
-
 textarea.style-2:focus,
 input[type="text"].style-2:focus,
 input[type="password"].style-2:focus,
@@ -790,9 +776,8 @@ input[type="search"].style-2:focus,
 input[type="tel"].style-2:focus,
 input[type="color"].style-2:focus {
     background-color      : #fff;
+    color: #111111;
 }
-
-
 
 input[type="date"]::-webkit-calendar-picker-indicator::after {
     display: none;
@@ -1150,7 +1135,6 @@ a:focus {
 
 .header-inner-wrap {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -1235,7 +1219,7 @@ a:focus {
     position: absolute;
     content: '';
     top: -16px;
-    left: 15px;
+    left: 37%;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -1611,11 +1595,6 @@ a:focus {
     font-weight: 500;
 }
 
-/* header-2 */
-
-
-
-
 /* footer */
 /* ---------------------------------- */
 .footer {
@@ -1879,6 +1858,7 @@ ul.intro li:last-child::after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -1935,8 +1915,8 @@ ul.intro li:last-child::after {
     letter-spacing: 1.5px;
 }
 
-.breadcrumbs li.active a {
-    color: #fff;
+.breadcrumbs li:hover a {
+    color: #d74d29;
 }
 
 .banner-page .content.contact {
@@ -1966,6 +1946,10 @@ ul.intro li:last-child::after {
 
 .banner-page .content.space {
     background-image: url(../images/bg-section/bg-space.jpg);
+}
+
+.banner-page .content.shop {
+    background-image: url(../images/bg-section/bg-shop.jpg);
 }
 
 /* wg-blog */

@@ -4,9 +4,9 @@
         padding-left: 0;
         justify-content: center;
     }
-
-
-    
+    .home-2 .wrap > img {
+        height: unset;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -135,13 +135,25 @@
         top: -100px;
         z-index: -1;
     }
-
+    .wg-cuisine,
+    .wg-service.type-1 {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .wg-book-table .content {
+        padding-bottom: 35px;
+    }
+    .wg-book-table,
+    .wg-policy {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 }
 
 @media (max-width: 1200px) {
-    .page-title .bottom div {
-        padding-left: 40px;
-        padding-right: 100px;
+    .page-title .bottom > div {
+        padding-left: 40px !important;
+        padding-right: 100px !important;
     }
     .book-table .right {
         width: 100%;
@@ -162,17 +174,20 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    
-
-
-
-
-
-
+    .footer > .left,
+    .footer > .right {
+        display: none;
+    }
+    .page-title .bottom .search-box .top-search {
+        left: 15px;
+    }
 }
 
 @media (max-width: 1180px) {
-    
+    .wg-cuisine .content {
+        max-width: 600px;
+        padding: 15px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -210,9 +225,6 @@
     .wg-contact .bot-right {
         height: 500px;
     }
-    .wg-book-table .content, .wg-book-table .image {
-        width: 100%;
-    }
     .wg-policy {
         flex-wrap: wrap;
     }
@@ -246,7 +258,6 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
-
 }
 
 @media (max-width: 991px) {
@@ -268,11 +279,6 @@
     .swiper-pagination {
         display: none !important;
     }
-
-
-    
-
-
 }
 
 @media (max-width: 820px) {
@@ -321,11 +327,13 @@
     .our-menu.style-1 .left {
         order: 1;
         width: 48%;
+        padding-top: 0;
     }
     .our-menu.style-1 .right {
         order: 2;
         width: 48%;
         padding-left: 0;
+        padding-top: 0;
     }
     .our-menu.style-1 .center {
         order: 3;
@@ -356,12 +364,41 @@
     .wg-book-table.style-1 .left {
         order: 1;
         width: 50%;
+        padding-top: 0;
     }
     .wg-book-table.style-1 .content {
         order: 2;
         width: 100%;
     }
-
+    .cart-item {
+        flex-wrap: wrap;
+    }
+    .cart-item .content {
+        margin-top: 0;
+    }
+    .product-item.style-list .content {
+        flex-wrap: wrap;
+    }
+    .product-item.style-list .content > div {
+        width: 100%;
+        justify-content: center;
+    }
+    .wg-shop-detail .content-inner {
+        padding-left: 0;
+    }
+    .wg-portfolio {
+        padding-bottom: 30px;
+    }
+    .wg-cuisine .content {
+        margin: 15px 0;
+        max-width: 500px;
+    }
+    .wg-cuisine {
+        height: 800px;
+    }
+    .wg-cuisine .img-text {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -374,16 +411,12 @@
     .footer.style-1 .content .top > form {
         width: 50%;
     }
-
-
-
-
-
-
-
-
-
-
+    .wg-book-table .content, .wg-book-table .image {
+        width: 100%;
+    }
+    .wg-book-table .image {
+        height: 500px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -399,10 +432,10 @@
         justify-content: center;
         text-align: center;
     }
-    .page-title .bottom div {
-        padding: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
+    .page-title .bottom > div {
+        padding: 0 !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important;
     }
     .wg-about .content {
         padding: 0;
@@ -410,7 +443,10 @@
     .wg-service .left {
         padding: 30px;
     }
-    .our-menu .center,
+    .our-menu .center {
+        width: 100%;
+        text-align: center;
+    }
     .our-menu .left,
     .our-menu .right {
         width: 100%;
@@ -427,10 +463,6 @@
         min-width: 340px;
         height: 340px;
         margin-top: 0 !important;
-    }
-    .footer > .left,
-    .footer > .right {
-        display: none;
     }
     .footer.style-1 .content .top {
         flex-wrap: wrap;
@@ -517,5 +549,41 @@
         padding-right: 15px;
         padding-left: 15px;
     }
-
+    .side-bar {
+        margin-top: 50px;
+    }
+    .cart-item {
+        flex-wrap: nowrap;
+    }
+    .widget-tabs.style-1 .widget-menu-tab {
+        margin-right: 0;
+        gap: 15px 61px;
+    }
+    .wg-404 {
+        height: auto;
+    }
+    .wg-404 .content {
+        padding: 50px 15px 30px 15px;
+    }
+    .wg-404 .content img {
+        width: 200px;
+    }
+    .wg-404 .title::before {
+        top: 37px;
+        left: 0;
+        font-size: 119px;
+        transform: none;
+    }
+    .wg-404 .title::after {
+        top: 37px;
+        right: 0;
+        font-size: 119px;
+        transform: none;
+    }
+    .wg-cuisine {
+        height: 1000px;
+    } 
+    .page-title .bottom .search-box .top-search {
+        transform: translateX(-50%);
+    }
 }
