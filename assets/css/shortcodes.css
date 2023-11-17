@@ -1060,7 +1060,7 @@ cursor: pointer;
 }
 
 .wg-introduction .wrap .image {
-    min-width: 1013px;
+    width: 1013px;
     position: relative;
 }
 
@@ -1094,6 +1094,16 @@ cursor: pointer;
     opacity: 1;
     visibility: visible;
     right: 178px;
+}
+
+.wg-introduction .wrap .image .swiper-button-next {
+    bottom: 1px;
+    right: -4px;
+    top: unset;
+}
+
+.wg-introduction .wrap .image .swiper-button-next:after {
+    display: none;
 }
 
 .wg-introduction .wrap .content {
@@ -1215,10 +1225,8 @@ ul.list-text li::before {
 /* ----------------------------------- */
 .customer-testimonial {
     background-image: url(../images/bg-section/bg-testimonias.png);
-    background-position: center;
-    background-size: cover;
+    background-position: -8px 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     padding-top: 135px;
     padding-bottom: 395px;
 }
@@ -1796,13 +1804,15 @@ a.mapboxgl-ctrl-logo {
     padding-bottom: 135px;
     padding-left: 15px;
     padding-right: 15px;
+    overflow: hidden;
 }
 
 .wg-book-table .content .item-1 {
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg);
     width: 208px;
     margin: auto;
-    margin-bottom: 2px;
+    margin-bottom: 2px; */
+    margin: -56px 97px 44px 0;
 }
 
 .wg-book-table .content .item-2 {

@@ -1595,6 +1595,197 @@ a:focus {
     font-weight: 500;
 }
 
+/* home-2 */
+.home-2 .mobile-nav-wrap .inner-mobile-nav {
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 117px;
+    padding: 109px 72px 110px 77px;
+    border-left: 1px solid #e0e0e0;
+    display: flex;
+    position: fixed;
+    background-color: #fff;
+    z-index: 999999;
+    overflow-x: scroll;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition   : all 0.3s ease;
+    -ms-transition    : all 0.3s ease;
+    -o-transition     : all 0.3s ease;
+    transition        : all 0.3s ease;
+}
+
+.home-2 .mobile-nav-wrap .inner-mobile-nav::-webkit-scrollbar {
+    width: 0px;
+}
+
+.home-2 .mobile-nav-wrap.active .inner-mobile-nav {
+    width: 1380px;
+    opacity: 1;
+    visibility: visible;
+    overflow-x: auto;
+}
+
+.home-2 .inner-mobile-nav {
+    padding: 15px;
+    position: relative;
+}
+
+.home-2 .inner-mobile-nav > img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* left */
+.home-2 .inner-mobile-nav .left {
+    width: 27.7%;
+    padding-top: 77px;
+    border-right: 1px solid #e7e7e7;
+}
+
+.home-2 #menu-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.home-2 #menu-mobile-menu>li {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 24px;
+    padding-top: 0;
+    cursor: pointer;
+}
+
+.home-2 #menu-mobile-menu>li .sub-menu-mobile li:last-child,
+.home-2 #menu-mobile-menu>li:last-child {
+    border: none;
+}
+
+.home-2 #menu-mobile-menu li a {
+    position: relative;
+    font-family: 'Oswald';
+    font-size: 35px;
+    line-height: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #111111;
+}
+
+.home-2 #menu-mobile-menu > li.menu-item-has-children-mobile > a::after {
+    content: '+';
+    position: absolute;
+    font-family: 'Oswald';
+    font-weight: 500;
+    position: absolute;
+    right: -23px;
+    top: 18px;
+    line-height: 16px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-2 #menu-mobile-menu > li.active > a::after {
+    content: '-';
+    transform: none;
+}
+
+.home-2 #menu-mobile-menu>li .sub-menu-mobile {
+    border-radius: 8px;
+    display: none;
+    text-align: start;
+    overflow: hidden;
+}
+
+.home-2 #menu-mobile-menu>li .sub-menu-mobile li {
+    padding: 11px 0px 5px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+}
+
+.home-2 #menu-mobile-menu>li .sub-menu-mobile a {
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.home-2 #menu-mobile-menu>li .sub-menu-mobile a::before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    left: -20px;
+    top: 10px;
+    border-radius: 50%;
+    background-color: #0c0b0b;
+}
+
+/* center */
+.home-2 .inner-mobile-nav .center {
+    padding: 100px 12px 10px 73px;
+    border-right: 1px solid #e7e7e7;
+    width: 35.5%;
+}
+
+.home-2 .inner-mobile-nav .center ul li {
+    margin-bottom: 20px;
+}
+
+.home-2 .inner-mobile-nav .center .title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 2px;
+}
+
+.home-2 .inner-mobile-nav .center p {
+    line-height: 32px;
+}
+
+.home-2 .inner-mobile-nav .center .numberphone {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #d74d29;
+    margin-top: 10px;
+    margin-bottom: 34px;
+}
+
+.home-2 .inner-mobile-nav .center .widget-social a {
+    width: 44px;
+    height: 44px;   
+    border: none;
+}
+
+/* right */
+.home-2 .inner-mobile-nav .right {
+    width: 36.8%;
+    padding-top: 150px;
+    padding-left: 75px;
+}
+
+.home-2 .inner-mobile-nav .right .wg-map {
+    width: 380px;
+    height: 380px;
+    margin-top: 0;
+    margin-left: 0;
+    min-width: unset;
+}
+
 /* footer */
 /* ---------------------------------- */
 .footer {
