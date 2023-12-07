@@ -2256,6 +2256,8 @@ form.form-1 .bottom button i {
 
 .our-chef-item .image {
     padding: 83px 270px 85px 54px;
+    display: flex;
+    align-items: center;
 }
 
 .our-chef-item .image img {

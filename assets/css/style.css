@@ -1060,8 +1060,17 @@ a:focus {
     color: #FFF;
 }
 
+.button-default.black:hover {
+    color: #d74d29;
+}
+
 .button-default.black::before {
     background-color: #FFF;
+}
+
+
+.button-default.black:hover::before {
+    background-color: #d74d29;
 }
 
 .button-reply {
@@ -1981,7 +1990,7 @@ ul.intro li:last-child::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 15px;
+    gap: 15px;
 }
 
 .footer.style-1 .logo-footer p {
@@ -2017,6 +2026,12 @@ ul.intro li:last-child::after {
 
 .footer.style-1 .content .top form {
     margin-right: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.footer.style-1 .content .top form button {
+    background-color: transparent !important;
 }
 
 .form-2 input {
@@ -2101,6 +2116,7 @@ ul.intro li:last-child::after {
     right: -26px;
 }
 
+.breadcrumbs li span,
 .breadcrumbs li a {
     color: #FFF;
     letter-spacing: 1.5px;
@@ -2153,6 +2169,20 @@ ul.intro li:last-child::after {
 .wg-blog {
     margin-bottom: 78px;
     position: relative;
+}
+
+.wg-blog::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: #000;
+}
+
+.wg-blog:hover::before {
+    animation: height_blog 1s;
 }
 
 .date {

@@ -51,7 +51,7 @@
         padding-left: 0px !important;
     }
     .customer-testimonial {
-        background-position: center;
+        background-position: center 104px !important;
         background-size: cover;
     }
     .book-table .left {
@@ -215,7 +215,11 @@
 @media (max-width: 1180px) {
     .wg-cuisine .content {
         max-width: 600px;
-        padding: 15px;
+        padding: 20px 30px 30px 30px;
+    }
+    .wg-cuisine .content .title {
+        font-size: 30px;
+        line-height: 45px;
     }
 }
 
@@ -290,6 +294,7 @@
 }
 
 @media (max-width: 991px) {
+    .space-info .wrap .item-1,
     .tf-mouse,
     .canvas,
     .main-nav {
@@ -307,6 +312,20 @@
     .swiper-button-prev,
     .swiper-pagination {
         display: none !important;
+    }
+    .footer.style-1 .content .top > div,
+    .footer.style-1 .content .top > form {
+        width: 50%;
+    }
+    .footer.style-1 .logo-footer {
+        justify-content: center;
+    }
+    .footer.style-1 .logo-footer p {
+        margin-right: 0;
+        text-align: center;
+    }
+    .our-chef-item .image {
+        padding-right: 15px;
     }
 }
 
@@ -391,6 +410,7 @@
     .wg-book-table.style-1 .content {
         order: 2;
         width: 100%;
+        margin-top: 30px;
     }
     .cart-item {
         flex-wrap: wrap;
@@ -428,10 +448,6 @@
         padding: 0;
         justify-content: center;
         gap: 15px;
-    }
-    .footer.style-1 .content .top > div,
-    .footer.style-1 .content .top > form {
-        width: 50%;
     }
     .wg-book-table .content, .wg-book-table .image {
         width: 100%;
@@ -491,10 +507,13 @@
     }
     .footer.style-1 .content .top > div,
     .footer.style-1 .content .top > form {
-        margin: 0 !;
+        margin: 0 !important;
         padding: 15px !important;
         width: 100% !important;
         text-align: center !important;
+    }
+    .footer.style-1 .content .top form input {
+        width: 100%;
     }
     .home-2 .wrap > img {
         display: none;
@@ -523,9 +542,7 @@
         width: unset;
     }
     .wg-policy .right .book-table .content {
-        padding-top: 15px;
-        padding-left: 15px;
-        padding-bottom: 15px;
+        padding: 30px;
         min-width: unset;
     }
     .our-menu.style-1 .left {
@@ -615,5 +632,11 @@
     .home-2 .inner-mobile-nav .right .wg-map {
         width: 230px;
         height: 230px;
+    }
+    .footer.style-1 .logo-footer {
+        justify-content: center;
+    }
+    .footer.style-1 .logo-footer p {
+        text-align: center;
     }
 }
